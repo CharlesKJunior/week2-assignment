@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS Link -->
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h1 style="text-align: center;">Welcome to Mutebwa Charles's Website</h1>
+        <h2>Ordered List</h2>
+        <ol type="I">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Beautiful Landscape" width="500">
+    </section>
+
+    <!-- Contact Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Denis</td>
+                    <td>123 Main St, City</td>
+                    <td>+1234567890</td>
+                    <td>john@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak St, Town</td>
+                    <td>+1987654321</td>
+                    <td>jane@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Mark Taylor</td>
+                    <td>789 Pine St, Village</td>
+                    <td>+1122334455</td>
+                    <td>mark@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Brown</td>
+                    <td>101 Maple St, District</td>
+                    <td>+6677889900</td>
+                    <td>alice@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Bob Johnson</td>
+                    <td>222 Elm St, State</td>
+                    <td>+5544332211</td>
+                    <td>bob@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="submit.php" method="POST">
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+            <br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+
+            <!-- Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">Uganda</option>
+                <option value="uk">Kenya</option>
+                <option value="canada">Tanzania</option>
+                <option value="australia">Rwanda</option>
+            </select>
+            <br>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <br>
+
+            <!-- Checkboxes -->
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
